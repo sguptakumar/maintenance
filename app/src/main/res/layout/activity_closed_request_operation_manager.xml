@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:background="@color/bgcolor"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".operation_manager.activity.BreakDownActivity">
+    <RelativeLayout android:layout_width="match_parent"
+                    android:background="@color/colorPrimary"
+                    android:layout_height="30dp">
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/marginleft"
+                    android:layout_marginRight="@dimen/marginleft"
+                    android:layout_marginTop="-20dp"
+                    android:elevation="@dimen/elevtion"
+                    android:background="@drawable/roundedbg"
+                    android:layout_height="40dp">
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="horizontal"
+                      android:layout_marginLeft="@dimen/marginleft"
+                      android:layout_marginStart="@dimen/marginleft"
+                      android:layout_marginRight="@dimen/marginleft"
+                      android:layout_marginEnd="@dimen/marginleft"
+                      android:weightSum="3"
+                      android:layout_height="match_parent">
+            <RelativeLayout android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent">
+                <TextView android:layout_width="match_parent"
+                          android:text="Breakdown Request"
+                          android:textColor="@color/activeTextColor"
+                          android:fontFamily="sans-serif"
+                          android:gravity="center"
+                          android:layout_above="@+id/brview"
+                          android:id="@+id/br"
+                          android:layout_height="match_parent"/>
+                <View android:layout_width="match_parent"
+                      android:layout_marginLeft="@dimen/marginleft"
+                      android:layout_marginEnd="@dimen/marginleft"
+                      android:layout_marginRight="@dimen/marginleft"
+                      android:layout_marginStart="@dimen/marginleft"
+                      android:id="@+id/brview"
+                      android:layout_alignParentBottom="true"
+                      android:background="@color/colorPrimary"
+                      android:layout_height="2dp"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent">
+                <TextView android:layout_width="match_parent"
+                          android:text="Preventive Maintenance"
+                          android:textColor="@color/activeTextColor"
+                          android:fontFamily="sans-serif"
+                          android:gravity="center"
+                          android:layout_above="@+id/pmview"
+                          android:id="@+id/pm"
+                          android:layout_height="match_parent"/>
+                <View android:layout_width="match_parent"
+                      android:layout_marginLeft="@dimen/marginleft"
+                      android:layout_marginEnd="@dimen/marginleft"
+                      android:layout_marginRight="@dimen/marginleft"
+                      android:layout_marginStart="@dimen/marginleft"
+                      android:id="@+id/pmview"
+                      android:visibility="invisible"
+                      android:layout_alignParentBottom="true"
+                      android:background="@color/colorPrimary"
+                      android:layout_height="2dp"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent">
+                <TextView android:layout_width="match_parent"
+                          android:text="Maintenance Request"
+                          android:textColor="@color/activeTextColor"
+                          android:fontFamily="sans-serif"
+                          android:gravity="center"
+                          android:layout_above="@+id/mrview"
+                          android:id="@+id/mr"
+                          android:layout_height="match_parent"/>
+                <View android:layout_width="match_parent"
+                      android:layout_marginLeft="@dimen/marginleft"
+                      android:layout_marginEnd="@dimen/marginleft"
+                      android:layout_marginRight="@dimen/marginleft"
+                      android:layout_marginStart="@dimen/marginleft"
+                      android:id="@+id/mrview"
+                      android:visibility="invisible"
+                      android:layout_alignParentBottom="true"
+                      android:background="@color/colorPrimary"
+                      android:layout_height="2dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:id="@+id/parentView"
+                  android:layout_marginTop="5dp"
+                  android:orientation="vertical"
+                  android:layout_height="match_parent">
+
+    </LinearLayout>
+</LinearLayout>

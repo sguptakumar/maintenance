@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginRight="@dimen/marginleft"
+    android:layout_marginLeft="@dimen/marginleft"
+    android:background="@drawable/yellowboxbg"
+    android:elevation="@dimen/elevtion"
+    android:backgroundTint="@color/white"
+    android:layout_marginTop="5dp"
+    android:layout_height="142dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/spacing_normal"
+        android:layout_marginLeft="@dimen/spacing_normal"
+        android:layout_marginRight="@dimen/spacing_normal"
+        android:layout_marginStart="@dimen/spacing_normal"
+
+        android:layout_marginTop="@dimen/spacing_rating">
+
+        <TextView
+            android:id="@+id/requestId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_toLeftOf="@+id/close"
+            android:layout_toStartOf="@+id/close"
+            android:fontFamily="sans-serif"
+            android:text="Request Id: 36429"
+            android:textColor="@color/activeTextColor"
+            android:textSize="@dimen/font_small" />
+
+        <TextView
+            android:id="@+id/close"
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/spacing_rating"
+            android:layout_marginRight="@dimen/spacing_rating"
+            android:layout_marginTop="@dimen/elevtion"
+            android:layout_toLeftOf="@+id/open"
+            android:layout_toStartOf="@+id/open"
+            android:background="@drawable/buttonbg"
+            android:backgroundTint="@color/colorPrimary"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="High"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_small" />
+
+        <RelativeLayout
+            android:id="@+id/open"
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/elevtion"
+            android:background="@drawable/buttonbg"
+            android:backgroundTint="@color/greentb">
+
+            <TextView
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="Open"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_small" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:rotation="90"
+                android:src="@drawable/arrow" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/machineno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/requestId"
+            android:layout_toLeftOf="@+id/close"
+            android:layout_toStartOf="@+id/close"
+            android:fontFamily="sans-serif"
+            android:text="M/c No.: 36429"
+            android:textColor="@color/activeTextColor"
+            android:textSize="@dimen/font_small" />
+
+        <TextView
+            android:id="@+id/comnt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/machineno"
+            android:fontFamily="sans-serif"
+            android:maxLines="1"
+            android:text="Machine is not working properly."
+            android:textColor="@color/activeTextColor"
+            android:textSize="@dimen/font_small" />
+
+        <TextView
+            android:id="@+id/creat_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/comnt"
+            android:fontFamily="sans-serif"
+            android:maxLines="1"
+            android:text="Created Date : 10/02/2019, 04:18 "
+            android:textColor="@color/activeTextColor"
+            android:textSize="@dimen/font_small" />
+
+        <TextView
+            android:id="@+id/complete_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/creat_date"
+            android:fontFamily="sans-serif"
+            android:maxLines="1"
+            android:text="Completion Date : 10/02/2019, 04:18 "
+            android:textColor="@color/activeTextColor"
+            android:textSize="@dimen/font_small" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/complete_date"
+            android:drawableLeft="@drawable/user"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="Dhiraj Pandey"
+            android:textColor="@color/activeTextColor"
+            android:textSize="@dimen/font_small" />
+
+        <TextView
+            android:id="@+id/suggestedpart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:drawableLeft="@drawable/smalliconsuggested"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="Suggested Part- bearing, roller, shaft"
+            android:textColor="@color/activeTextColor"
+            android:textSize="@dimen/font_small" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/arrow"
+            android:backgroundTint="@color/activeTextColor" />
+
+    </RelativeLayout>
+</RelativeLayout>

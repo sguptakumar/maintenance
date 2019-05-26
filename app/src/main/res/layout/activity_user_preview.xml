@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".management.activity.ManagementUserPreviewActivity">
+   <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:weightSum="4">
+         <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:id="@+id/uspreviewlay1"
+                 android:layout_weight="1"
+                 android:layout_gravity="center">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textSize="15sp"
+                    android:textColor="#D62A31"
+                    android:fontFamily="sans-serif"
+                    android:maxLines="1"
+                    android:layout_gravity="center"/>
+
+         </LinearLayout>
+
+         <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:layout_toRightOf="@id/uspreviewlay1"
+                 android:id="@+id/uspreviewlay2"
+                 android:layout_gravity="center"
+                 android:layout_weight="1">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textSize="15sp"
+                    android:textColor="#D62A31"
+                    android:fontFamily="sans-serif"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:layout_gravity="center"/>
+
+
+         </LinearLayout>
+
+         <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:layout_toRightOf="@id/uspreviewlay1"
+                 android:id="@+id/uspreviewlay3"
+                 android:layout_gravity="center"
+                 android:layout_weight="1">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile No"
+                    android:textSize="15sp"
+                    android:textColor="#D62A31"
+                    android:fontFamily="sans-serif"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:layout_gravity="center"/>
+
+
+         </LinearLayout>
+
+         <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:layout_toRightOf="@id/uspreviewlay1"
+                 android:id="@+id/uspreviewlay4"
+                 android:layout_gravity="center"
+                 android:layout_weight="1">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UserType"
+                    android:textSize="15sp"
+                    android:textColor="#D62A31"
+                    android:fontFamily="sans-serif"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:layout_gravity="center"/>
+         </LinearLayout>
+   </LinearLayout>
+
+   <android.support.v7.widget.RecyclerView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/recyclerview_userpreview"
+          android:layout_marginTop="30dp">
+
+   </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="@drawable/backdroundbg"
+                android:layout_height="match_parent"
+                tools:context=".fragment.OtpFragment">
+
+
+    <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/user"
+            android:elevation="@dimen/elevtion"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:textSize="@dimen/font_normal"
+            android:layout_above="@+id/password"
+            android:drawablePadding="@dimen/space_8"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:hint="@string/otp" />
+    <View android:layout_width="match_parent"
+          android:layout_marginRight="@dimen/fab_margin"
+          android:layout_marginLeft="@dimen/fab_margin"
+          android:layout_below="@+id/username"
+          android:background="@color/inactiveTxtColor"
+          android:layout_height="1dp"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="35dp"
+            android:id="@+id/title"
+            android:textColor="@color/activeTextColor"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_above="@+id/username"
+            android:gravity="center|center_vertical"
+            android:textSize="@dimen/font_normal"
+            android:drawablePadding="@dimen/space_8"
+            android:layout_marginLeft="@dimen/spacing_normal"
+            android:layout_marginRight="@dimen/spacing_normal"
+            android:text="Please Enter your OTP" />
+
+    <TextView
+            android:id="@+id/forgotpassword"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_height="35dp"
+            android:visibility="invisible"
+            android:clickable="false"
+            android:textColor="@color/colorPrimary"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/username"
+            android:gravity="end|center_vertical"
+            android:textSize="@dimen/font_normal"
+            android:drawablePadding="@dimen/space_8"
+            android:layout_marginLeft="@dimen/spacing_normal"
+            android:layout_marginRight="@dimen/spacing_normal"
+            android:text="Forgot Password?" />
+
+    <TextView android:layout_width="130dp"
+              android:text="Submit"
+              android:elevation="@dimen/elevation"
+              android:gravity="center"
+              android:id="@+id/submitOtp"
+              android:layout_below="@+id/forgotpassword"
+              android:layout_centerHorizontal="true"
+              android:textSize="@dimen/font_normal"
+              android:textColor="@color/white"
+              android:backgroundTint="@color/colorPrimary"
+              android:background="@drawable/yellowboxbg"
+              android:layout_height="40dp"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:src="@drawable/logo"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/colorPrimary"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/title"
+            android:layout_height="100dp"/>
+</RelativeLayout>

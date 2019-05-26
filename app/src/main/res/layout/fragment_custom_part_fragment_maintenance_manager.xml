@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backdroundbg"
+        tools:context=".operation_manager.activity.AddBreakDownRequestActivity">
+        <ScrollView android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/marginleft"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/custompartname"
+                    style="@style/EditTextStyle."
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="40dp"
+                    android:elevation="@dimen/elevtion"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    android:layout_marginRight="@dimen/spacing_normal"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:background="@drawable/textviewbg"
+                    android:drawableLeft="@drawable/machineno"
+                    android:drawableStart="@drawable/machineno"
+                    android:hint="Part Name" />
+                <EditText
+                    android:id="@+id/customdescription"
+                    style="@style/EditTextStyle."
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginBottom="@dimen/marginleft"
+                    android:elevation="@dimen/elevtion"
+                    android:gravity="start"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    android:layout_marginRight="@dimen/spacing_normal"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:background="@drawable/textviewbg"
+                    android:hint="Description"
+                    android:layout_marginTop="10dp"/>
+                <EditText
+                    android:id="@+id/customcomment"
+                    style="@style/EditTextStyle."
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginBottom="@dimen/marginleft"
+                    android:elevation="@dimen/elevtion"
+                    android:gravity="start"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    android:layout_marginRight="@dimen/spacing_normal"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:background="@drawable/textviewbg"
+                    android:hint="Comment" />
+                <EditText
+                    android:id="@+id/customquantity"
+                    style="@style/EditTextStyle."
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:visibility="visible"
+                    android:drawableEnd="@drawable/downarrow"
+                    android:drawableRight="@drawable/downarrow"
+                    android:layout_marginBottom="@dimen/marginleft"
+                    android:elevation="@dimen/elevtion"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    android:layout_marginRight="@dimen/spacing_normal"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:background="@drawable/textviewbg"
+                    android:hint="Quantity" />
+                <TextView
+                    android:id="@+id/customselectdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:visibility="visible"
+                    android:drawableEnd="@drawable/downarrow"
+                    android:drawableRight="@drawable/downarrow"
+                    android:layout_marginBottom="@dimen/marginleft"
+                    android:elevation="@dimen/elevtion"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    android:layout_marginRight="@dimen/spacing_normal"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:background="@drawable/textviewbg"
+                    android:drawableLeft="@drawable/calender"
+                    android:drawableStart="@drawable/calender"
+                    android:hint="Select Date"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/customuploadfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:visibility="visible"
+                    android:drawableEnd="@drawable/upload"
+                    android:drawableRight="@drawable/upload"
+                    android:layout_marginBottom="@dimen/marginleft"
+                    android:elevation="@dimen/elevtion"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    android:layout_marginRight="@dimen/spacing_normal"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:background="@drawable/textviewbg"
+                    android:drawableLeft="@drawable/pdffile"
+                    android:drawableStart="@drawable/pdffile"
+                    android:text="Upload File"
+                    android:gravity="center"/>
+
+
+
+                <TextView
+                    android:id="@+id/customuploadimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="@dimen/marginleft"
+                    android:elevation="@dimen/elevtion"
+                    android:paddingRight="@dimen/marginleft"
+                    android:paddingEnd="@dimen/marginleft"
+                    android:drawableLeft="@drawable/camera"
+                    android:drawableStart="@drawable/camera"
+                    android:layout_marginLeft="@dimen/spacing_normal"
+                    android:layout_marginRight="@dimen/spacing_normal"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:background="@drawable/textviewbg"
+                    android:hint="       Upload Part Photo From Camera"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+        </ScrollView>
+        <Button android:layout_width="match_parent"
+            android:id="@+id/submit"
+            android:layout_marginBottom="@dimen/marginleft"
+            android:layout_marginRight="@dimen/marginleft"
+            android:layout_marginLeft="@dimen/marginleft"
+            android:background="@drawable/buttonbg"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:elevation="@dimen/elevtion"
+            android:layout_alignParentBottom="true"
+            android:layout_height="40dp"/>
+    </RelativeLayout>
+
+

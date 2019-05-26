@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.appgenesis.com.maintenanceapp">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+            android:name=".MyApplication"
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:largeHeap="true"
+            android:theme="@style/AppTheme"
+            tools:ignore="GoogleAppIndexingWarning"
+            android:hardwareAccelerated="false"
+            android:usesCleartextTraffic="true">
+        <activity android:name=".management.activity.ManagementPreventiveRequestDetailActivity">
+        </activity>
+        <activity
+                android:name=".technician.activity.TechnicianCompletedRequestActivity"
+                android:label="Completed Request"
+                android:parentActivityName=".technician.activity.TechnicianDashboardActivity">
+        </activity>
+        <activity
+                android:name=".technician.activity.TechnicianMaintenanceRequestActivity"
+                android:parentActivityName=".technician.activity.TechnicianDashboardActivity">
+        </activity>
+        <activity
+                android:name=".technician.activity.TechnicianBreakDownRequestActivity"
+                android:parentActivityName=".technician.activity.TechnicianDashboardActivity">
+        </activity>
+        <activity
+                android:name=".maintenance_manager.activity.MaintenanceManagerPreventiveRequestActivity"
+                android:label="Preventive Request"
+                android:parentActivityName=".maintenance_manager.activity.MaintenanceManagerDashbordActivity">
+        </activity>
+        <activity
+                android:name=".management.activity.ManagementMaintenanceRequestActivity"
+                android:parentActivityName=".management.activity.ManagementDashboardActivity">
+        </activity>
+        <activity
+                android:name=".management.activity.ManagementBreakDownRequestActivity"
+                android:parentActivityName=".management.activity.ManagementDashboardActivity">
+        </activity>
+        <activity
+                android:name=".operation_manager.activity.OperationManagerDashboardActivity"
+                android:label="Home"/>
+        <activity
+                android:name=".operation_manager.activity.BreakDownActivity"
+                android:label="Breakdown Request"
+                android:parentActivityName=".operation_manager.activity.OperationManagerDashboardActivity"/>
+        <activity
+                android:name=".operation_manager.activity.AddBreakDownRequestActivity"
+                android:parentActivityName=".operation_manager.activity.BreakDownActivity"/>
+        <activity
+                android:name=".operation_manager.activity.MaintenanceRequestActivityOperationManager"
+                android:label="Maintenance Request"
+                android:parentActivityName=".operation_manager.activity.OperationManagerDashboardActivity"/>
+        <activity
+                android:name=".operation_manager.activity.ClosedRequestActivityOperationManager"
+                android:label="Closed Request"
+                android:parentActivityName=".operation_manager.activity.OperationManagerDashboardActivity"/>
+        <activity
+                android:name=".operation_manager.activity.CompletedRequestActivityOperationManager"
+                android:label="Completed Request"
+                android:parentActivityName=".operation_manager.activity.OperationManagerDashboardActivity"/>
+        <activity
+                android:name=".operation_manager.activity.OperationManagerBreakdownrequestDetailActivity"
+                android:label="Breakdown Detail"
+                android:parentActivityName=".operation_manager.activity.CompletedRequestActivityOperationManager"/>
+        <activity
+                android:name=".LoginRegistrationActivity"
+                android:label="Login">
+        </activity>
+        <activity android:name=".SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".maintenance_manager.activity.MaintenanceManagerDashbordActivity">
+        </activity>
+        <activity
+                android:name=".maintenance_manager.activity.MaintenanceManagementBreakDownRequestActivity"
+                android:label="Breakdown Request"
+                android:parentActivityName=".maintenance_manager.activity.MaintenanceManagerDashbordActivity"/>
+        <activity
+                android:name=".maintenance_manager.activity.MaintenanceManagementBreakdownRequestDetailActivity"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+                android:name=".maintenance_manager.activity.MaintenanceManagerStoreRoomActivity"
+                android:label="Store Room"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+                android:name=".maintenance_manager.activity.MaintenanceManagerCompletedRequestActivity"
+                android:label="Completed Request"
+                android:parentActivityName=".maintenance_manager.activity.MaintenanceManagerDashbordActivity"/>
+        <activity android:name=".technician.activity.TechnicianDashboardActivity">
+        </activity>
+        <activity
+                android:name=".technician.activity.TechnicianPreventivemaintenanceActivity"
+                android:label="Preventive maintenance"
+                android:parentActivityName=".technician.activity.TechnicianDashboardActivity">
+        </activity>
+        <activity
+                android:name=".technician.activity.TechnicianBreakDownRequestDetailActivity"
+                android:label="Maintenance Personal Details"
+                android:parentActivityName=".technician.activity.TechnicianBreakDownRequestActivity">
+        </activity>
+        <activity android:name=".store.activity.StoreDashboardActivity">
+        </activity>
+        <activity
+                android:name=".store.activity.StorePreventivemaintenanceActivity"
+                android:label="Preventive maintenance"
+                android:parentActivityName=".store.activity.StoreDashboardActivity">
+        </activity>
+        <activity
+                android:name=".store.activity.StorePartDetailActivity"
+                android:label="Part Request Details"
+                android:parentActivityName=".store.activity.StorePreventivemaintenanceActivity">
+        </activity>
+        <activity
+                android:name=".store.activity.StoreListofPart"
+                android:label="List of Part"
+                android:parentActivityName=".store.activity.StoreDashboardActivity">
+        </activity>
+        <activity android:name=".management.activity.ManagementDashboardActivity">
+        </activity>
+        <activity
+                android:name=".management.activity.ManagementUserPreviewActivity"
+                android:label="User Preview"
+                android:parentActivityName=".management.activity.ManagementDashboardActivity">
+        </activity>
+        <activity
+                android:name=".operation_manager.activity.OperationManagerPreventiveRequestActivity"
+                android:label="Preventive Request"
+                android:parentActivityName=".operation_manager.activity.OperationManagerDashboardActivity">
+        </activity>
+        <activity
+                android:name=".management.activity.ManagementAdduserActivity"
+                android:label="Add User"
+                android:parentActivityName=".management.activity.ManagementUserPreviewActivity">
+        </activity>
+        <activity
+                android:name=".management.activity.ManagementCreatePreventiveMaintenance"
+                android:label="Create Preventive Maintenance"
+                android:parentActivityName=".management.activity.ManagementDashboardActivity">
+        </activity>
+        <activity
+                android:name=".management.activity.ManagementCreatePreventiveMaintenanceActivity"
+                android:label="Create Preventive Maintenance"
+                android:parentActivityName=".management.activity.ManagementCreatePreventiveMaintenance">
+        </activity>
+        <activity
+                android:name=".maintenance_manager.activity.MaintenanceManagerClosedRequestActivity"
+                android:label="Closed Request"
+                android:parentActivityName=".maintenance_manager.activity.MaintenanceManagerDashbordActivity">
+        </activity>
+        <activity
+                android:name=".maintenance_manager.activity.MaintenanceManagermaintenanceRequestActivity"
+                android:label="Maintenance Request"
+                android:parentActivityName=".maintenance_manager.activity.MaintenanceManagerDashbordActivity">
+        </activity>
+        <activity android:name=".maintenance_manager.activity.MaintenanceManagementMaintenanceRequestDetailActivity"
+                  android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+                  android:parentActivityName=".maintenance_manager.activity.MaintenanceManagementBreakDownRequestActivity">
+
+        </activity>
+        <activity android:name=".maintenance_manager.activity.MaintenanceManagementPreventiveRequestDetailActivity"
+                  android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        </activity>
+        <activity android:name=".operation_manager.activity.OperationManagerMaintenancerequestDetailActivity"
+                  android:label="Maintenance Detail"
+                 android:parentActivityName=".operation_manager.activity.MaintenanceRequestActivityOperationManager">
+
+        </activity>
+        <activity android:name=".operation_manager.activity.OperationManagerPreventiverequestDetailActivity"
+                   android:label="Preventive Detail"
+                    android:parentActivityName=".operation_manager.activity.OperationManagerPreventiveRequestActivity">
+
+        </activity>
+        <activity android:name=".technician.activity.TechnicianMaintenanceRequestDetailActivity"
+                   android:label="Maintenance Detail"
+                   android:parentActivityName=".technician.activity.TechnicianMaintenanceRequestActivity">
+        </activity>
+        <activity android:name=".technician.activity.TechnicianPreventiveRequestDetailActivity"
+                  android:label="Preventive Detail"
+                  android:parentActivityName=".technician.activity.TechnicianMaintenanceRequestActivity"/>
+    </application>
+
+</manifest>

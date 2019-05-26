@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="32dp">
+    <CheckBox
+            android:id="@+id/spart_name"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:textSize="10dp"
+            android:text="Bearing"/>
+    <TextView
+            android:id="@+id/savailable_quantity"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="20"
+    />
+
+
+    <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_marginRight="@dimen/marginleft"
+            android:elevation="@dimen/elevtion"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/roundedbg"
+            android:layout_height="25dp">
+        <LinearLayout
+                android:layout_width="150dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/marginleft"
+                android:layout_marginStart="@dimen/marginleft"
+                android:layout_marginRight="@dimen/marginleft"
+                android:layout_marginEnd="@dimen/marginleft"
+                android:weightSum="3"
+                android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content">
+                <ImageView
+                        android:layout_width="20dp"
+                        android:textColor="@color/activeTextColor"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/minus"
+                        android:background="@drawable/ic_minus"
+                        android:layout_height="20dp"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_gravity="center_vertical"
+
+                            android:layout_height="wrap_content">
+                <TextView android:layout_width="match_parent"
+                          android:text="0"
+                          android:textColor="@color/activeTextColor"
+                          android:fontFamily="sans-serif"
+                          android:gravity="center"
+                          android:layout_above="@+id/weeklyview"
+                          android:id="@+id/srequired_quantity"
+                          android:textSize="10dp"
+                          android:layout_height="match_parent"/>
+
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content">
+                <ImageView
+                        android:layout_width="20dp"
+                        android:background="@drawable/ic_add"
+                        android:textColor="@color/activeTextColor"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:onClick="increaseInteger"
+                        android:id="@+id/plus"
+                        android:layout_height="20dp"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
+

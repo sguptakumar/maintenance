@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+<RelativeLayout android:layout_width="match_parent"
+              android:layout_height="85dp"
+              android:layout_marginBottom="@dimen/marginleft"
+              android:elevation="@dimen/elevtion"
+              android:id="@+id/mainbg"
+              android:background="@drawable/yellowboxbg"
+              android:layout_marginLeft="@dimen/marginleft"
+              android:layout_marginRight="@dimen/marginleft"
+              android:layout_marginTop="@dimen/marginleft"
+               android:orientation="horizontal">
+            <RelativeLayout android:layout_width="45dp"
+                            android:elevation="@dimen/elevtion"
+                            android:id="@+id/icon"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/marginleft"
+                            android:background="@drawable/imageboxbg"
+                            android:layout_height="45dp">
+    <ImageView android:layout_width="wrap_content"
+               android:id="@+id/iconimage"
+               android:layout_centerHorizontal="true"
+               android:layout_centerVertical="true"
+               android:src="@drawable/breakdown"
+               android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:id="@+id/title"
+              android:layout_toEndOf="@+id/icon"
+              android:layout_toRightOf="@+id/icon"
+              android:layout_marginLeft="@dimen/marginleft"
+              android:layout_marginStart="@dimen/marginleft"
+              android:textSize="@dimen/textsize"
+              android:layout_centerVertical="true"
+              android:layout_toStartOf="@+id/circle"
+              android:layout_toLeftOf="@+id/circle"
+              android:layout_marginEnd="@dimen/marginleft"
+              android:layout_marginRight="@dimen/marginleft"
+              android:textStyle="bold"
+              android:textColor="@android:color/white"
+              android:text="BreakDown Request"
+              android:fontFamily="sans-serif"/>
+    <RelativeLayout android:layout_width="35dp"
+                    android:id="@+id/circle"
+                    android:background="@drawable/circularbg"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/marginleft"
+                    android:layout_marginRight="@dimen/marginleft"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="35dp">
+                <TextView android:layout_width="wrap_content"
+                          android:layout_centerVertical="true"
+                          android:layout_centerHorizontal="true"
+                          android:textColor="@color/yellow"
+                          android:text="999"
+                          android:maxLength="3"
+                          android:maxLines="1"
+                          android:id="@+id/count"
+                          android:fontFamily="sans-serif"
+                          android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</RelativeLayout>
+</LinearLayout>

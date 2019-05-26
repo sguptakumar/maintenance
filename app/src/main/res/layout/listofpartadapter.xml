@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bearing"
+                android:id="@+id/partnametext"
+                android:textSize="10sp"
+                android:maxLines="1"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:layout_toRightOf="@+id/partnametext"
+                android:maxLines="1"
+                android:textSize="10sp"
+                android:id="@+id/quantity"
+                android:gravity="center"
+                android:layout_marginLeft="230dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"/>
+        <View android:layout_width="match_parent"
+              android:layout_marginLeft="@dimen/marginleft"
+              android:layout_marginEnd="@dimen/marginleft"
+              android:layout_marginRight="@dimen/marginleft"
+              android:id="@+id/view6"
+              android:layout_marginStart="@dimen/marginleft"
+              android:background="@color/inactiveTxtColor"
+              android:layout_below="@+id/partnametext"
+              android:layout_height="1dp"
+              android:layout_marginTop="4dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

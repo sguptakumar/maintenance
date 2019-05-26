@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:background="@color/bgcolor"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".operation_manager.activity.BreakDownActivity">
+    <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_marginRight="@dimen/marginleft"
+            android:layout_marginLeft="@dimen/marginleft"
+            android:background="@drawable/yellowboxbg"
+            android:elevation="@dimen/elevtion"
+            android:backgroundTint="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+        <TextView
+                android:id="@+id/store_room_part_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_toLeftOf="@+id/close"
+                android:layout_toStartOf="@+id/close"
+                android:fontFamily="sans-serif"
+                android:text="Part Name"
+                android:layout_marginLeft="@dimen/spacing_normal"
+                android:textColor="@color/black"
+                android:textSize="10dp" />
+        <TextView
+                android:id="@+id/store_room_available_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="130dp"
+                android:fontFamily="sans-serif"
+                android:text="Available Quantity"
+                android:textColor="@color/black"
+                android:textSize="10dp" />
+        <TextView
+                android:id="@+id/store_room_required_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="250dp"
+                android:fontFamily="sans-serif"
+                android:text="Required Quantity"
+                android:textColor="@color/black"
+                android:textSize="10dp" />
+        <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/store_room_part_name"
+                android:id="@+id/store_roomrecyclerview"
+                android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+        <Button
+                android:id="@+id/storeroomorderpart"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Order Part"
+                android:background="@color/colorPrimary"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:layout_marginTop="235dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
+
+
+
+

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/yellowboxbg"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/bgcolor">
+    <EditText
+            android:id="@+id/dialogPartname"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="text"
+            android:drawableEnd="@drawable/downarrow"
+            android:drawableRight="@drawable/downarrow"
+            android:textSize="10sp"
+            android:hint="Part Name"/>
+
+
+    <EditText
+            android:id="@+id/dialogDiscription"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="text"
+            android:textSize="10sp"
+            android:hint="Discription"/>
+    <EditText
+            android:id="@+id/dialogQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="text"
+            android:hint="Quantity"
+            android:drawableEnd="@drawable/downarrow"
+            android:drawableRight="@drawable/downarrow"
+            android:textSize="10sp"/>
+    <EditText
+            android:id="@+id/dialogNeedbydate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="text"
+            android:hint="Need By Date"
+            android:drawableEnd="@drawable/calender"
+            android:drawableRight="@drawable/calender"
+            android:textSize="10sp"/>
+
+
+
+</LinearLayout>

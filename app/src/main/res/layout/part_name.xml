@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="38dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="@dimen/marginleft"
+        android:layout_marginRight="@dimen/marginleft"
+        android:layout_marginTop="@dimen/font_small">
+
+        <TextView
+            android:id="@+id/tv_part_name"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:text="Camshaft"
+            android:textSize="12dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_part_quantity"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="300dp"
+            android:text="1" />
+        <View android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/marginleft"
+            android:layout_marginEnd="@dimen/marginleft"
+            android:layout_marginRight="@dimen/marginleft"
+            android:id="@+id/view6"
+            android:layout_marginStart="@dimen/marginleft"
+            android:background="@color/inactiveTxtColor"
+            android:layout_below="@+id/tv_part_name"
+            android:layout_height="1dp"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>
